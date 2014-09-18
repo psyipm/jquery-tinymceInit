@@ -8,7 +8,7 @@
  * @returns {undefined}
  */
 jQuery.tinymceRemove = function() {
-	try {
+    try {
         for (var i=0; i<=tinymce.editors.length; i++) {
             tinyMCE.editors[i].remove();
         };
@@ -37,10 +37,6 @@ jQuery.fn.tinymceInit = function(options) {
         };
         
         var s = $.extend(true, defaults, options);
-        
-        //debug
-        console.log(s);
-        
         try {
             tinymce.init({
                 selector: s.selector,
